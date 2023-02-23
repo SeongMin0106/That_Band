@@ -9,13 +9,14 @@ import SwiftUI
 
 struct RecruitListView: View {
     var body: some View {
-        ScrollView {
-            ForEach(0...5, id: \.self) { _ in
-                RecruitCellView()
-                    .padding(.vertical,4)
+        VStack {
+            ScrollView {
+                ForEach(0...5, id: \.self) { _ in
+                    RecruitCellView()
+                        .padding(.vertical,4)
+                }
             }
         }
-        
     }
 }
 
